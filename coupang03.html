@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {display:none;}
+           * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+h1 {
+    color: rgb(227, 9, 38);
+    margin-left: 100px;
+}
+header {
+    padding: 10px;
+    background-color: rgb(248, 251, 251);
+}
+nav {
+    background-color: cadetblue;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+section {
+    padding: 100px 0;
+    background-color: rgb(241, 241, 14);
+}
+div {
+    display: flex;
+    height: 100px;
+}
+div p {
+    flex: 1;
+    height: 200px;
+    /* background-color: khaki; */
+}
+
+.center {
+    background-color: rgb(62, 171, 146);
+}
+.side{
+    background-color: red;
+}
+.sidey{
+    background-color: rgb(255, 255, 255);
+}
+footer {
+    padding: 10px;
+    background-color: rgb(103, 100, 90);
+}
+
+       </style>
+</head>
+<body>
+    <header>
+        <h1><img src="../ex0516/쿠팡.png" alt=""></h1>
+        <p>카테고리</p>
+    </header>
+    <nav>
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">패션의류/잡화</a>
+            <a href="#" class="w3-bar-item w3-button">뷰티</a>
+            <a href="#" class="w3-bar-item w3-button">출산/유아동</a>
+            <a href="#" class="w3-bar-item w3-button">식품</a>
+            <a href="#" class="w3-bar-item w3-button">주방용품</a>
+            <a href="#" class="w3-bar-item w3-button">생활용품</a>
+            <a href="#" class="w3-bar-item w3-button">홈인테리어</a>
+            <a href="#" class="w3-bar-item w3-button">가전디지털</a>
+            <a href="#" class="w3-bar-item w3-button">스포츠/레저</a>
+            <a href="#" class="w3-bar-item w3-button">자동차용품</a>
+            <a href="#" class="w3-bar-item w3-button">도서/음반/DVD</a>
+            <a href="#" class="w3-bar-item w3-button">완구/취미</a>
+            <a href="#" class="w3-bar-item w3-button">문구/오피스</a>
+            <a href="#" class="w3-bar-item w3-button">반려동물용품</a>
+            <a href="#" class="w3-bar-item w3-button">헬스/건강식품</a>
+            <a href="#" class="w3-bar-item w3-button">여행/티켓</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">테마관</button>
+              <div class="w3-dropdown-content w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">로켓설치</a>
+                <a href="#" class="w3-bar-item w3-button">공간별 집꾸미기</a>
+                <a href="#" class="w3-bar-item w3-button">헬스케어 전문관</a>
+                <a href="#" class="w3-bar-item w3-button">쿠팡 Only</a>
+                <a href="#" class="w3-bar-item w3-button">싱글라이프</a>
+                <a href="#" class="w3-bar-item w3-button">악기전문관</a>
+                <a href="#" class="w3-bar-item w3-button">결혼준비</a>
+                <a href="#" class="w3-bar-item w3-button">아트/공예</a>
+                <a href="#" class="w3-bar-item w3-button">홈카페</a>
+                <a href="#" class="w3-bar-item w3-button">실버스토어</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <section>
+        <h2>오늘의 발견</h2>
+        
+<div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides w3-animate-top" src="../images/스타벅스 앳홈.png" style="width:100%">
+    <img class="mySlides w3-animate-bottom" src="../images/컨디션.png" style="width:100%">
+    <img class="mySlides w3-animate-top" src="../images/홑이불 토퍼 세트.png" style="width:100%">
+  </div>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500);    
+        }
+        </script>
+    <footer>
+        <p>사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
+            마켓플레이스(오픈마켓) 상품의 경우 쿠팡은 통신판매중개자이며 통신판매의 당사자가 아닙니다.
+            쿠팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다.
+            쿠팡은 소비자 보호와 안전거래를 위해 신뢰관리센터(CM112@coupang.com)를 운영하고 있으며, 관련 분쟁이 발생할 경우 별도의 분쟁 처리절차에 의거 분쟁이 처리됩니다.
+            Copyright © Coupang Corp. 2010-2022 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
